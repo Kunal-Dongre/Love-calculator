@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Google Font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Tangerine:wght@700&display=swap"
+        rel="stylesheet">
+
+    <!-- Css file -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+    <title>Love Calculator</title>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"><img src="./assets/heartlogo.png" width="80px" height="80px" alt=""
+                style="position: relative; top: -5px;">Love Calculator</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://tinder.com/?lang=en">Tinder</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./site/tips.html">Tips</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./site/contact.html">Contact</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./site/about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <br>
+    <div class="heart" style="display: inline-block;">&#x2665;</div>
+    <div class="container-fluid cf1">
+        <div class="row">
+            <div class="col-lg-6 col-md-3 col-sm-2 firstname">
+                <h2 style="display: inline-block;">Enter Your Name:</h2>
+                <br>
+                <input class="text-center" id="first" type="text" placeholder="ENTER YOUR NAME"
+                    style="font-family: 'Open Sans', sans-serif;">
+            </div>
+
+            <!-- <div class="col-lg-2 col-md-6 col-sm-8"></div> -->
+
+            <div class="col-lg-6 col-md-3 col-sm-2 secondname">
+                <h2 class="text-center" style="display: inline-block;">Enter Partner Name:</h2>
+                <br>
+                <input type="text" id="partner" placeholder="ENTER PARTNER NAME"
+                    style="font-family: 'Open Sans', sans-serif;">
+            </div>
+            <br><br>
+            <button onclick="display()" class="btn btn-primary mx-auto d-block button1">Play Game</button
+                onclick="dice()">
+            <div class="col-lg-12 col-md-12 col-sm-12 answer">
+                <br><br>
+                <h2 id="result" style="font-family: 'Open Sans', sans-serif;">
+                    Your Result will appear here.
+                </h2>
+            </div class="col-lg-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 answer">
+                <br><br>
+                <img id="img1" src="" alt="" style="z-index: 2;">
+            </div class="col-lg-12">
+        </div class="row">
+    </div class="container-fluid">
+
+    <img src="./assets/jointheart.png" alt="image" class="jointheart">
+    <img src="./assets/jointheart.png" alt="image" class="jointheart1">
+
+    <div class="container-fluid cf2">
+        <h2>
+            Love Calculator • Find compatibility
+        </h2>
+        <p class="text-center">
+            Love calculation by a love calculator is based on certain algorithm. Once two names are entered, this
+            calculator matches the name of the first person against some love, romance and relationship related
+            parameters. Similarly the name of your partner/lover is matched against the same parameters. The love
+            calculator's algorithm then detects how many parameters you both have in common. It is based on this
+            analysis that the calculator reaches the conclusion and displays love percentage or compatibility.
+        </p>
+    </div class="container-fluid">
+
+    <div class="container-fluid cf3">
+        <h2>
+            Love quote of the day
+        </h2>
+        <p>
+            "A man reserves his true and deepest love not for the species of woman in whose company he finds himself
+            electrified and enkindled, but for that one in whose company he may feel tenderly drowsy."
+        </p>
+        <p> -George Jean
+            Nathan</p>
+    </div class="container-fluid">
+
+
+    <script>
+        function display() {
+            var score = Math.ceil(Math.random() * 100);
+            var name1 = document.getElementById("result").innerHTML = (score + "%");
+            if(score<=25)
+            {
+                document.querySelectorAll("#img1")[0].setAttribute("src","assets/25.gif");
+            }
+            if(score>25 && score<=50)
+            {
+                document.querySelectorAll("#img1")[0].setAttribute("src","assets/50.gif");
+            }
+            if(score>50 && score<=75)
+            {
+                document.querySelectorAll("#img1")[0].setAttribute("src","assets/75.gif");
+            }
+            if(score>75 && score<=100)
+            {
+                document.querySelectorAll("#img1")[0].setAttribute("src","assets/100.gif");
+            }
+        }
+    </script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

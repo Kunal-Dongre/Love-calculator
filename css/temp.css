@@ -1,0 +1,72 @@
+body {
+    font-family: 'Tangerine', cursive;
+    background-color: #ffcac2;
+    scroll-behavior: smooth;
+
+    text-align: center;
+}
+
+.navbar {
+    font-size: 2rem;
+    /* background-color: #ffa5b0; */
+    background: linear-gradient(70deg, #ffa5b0, #f54291);
+    padding: 0 16px;
+    font-weight: 800;
+
+}
+
+.navbar-brand {
+    font-size: 3rem;
+    height: 80px;
+
+}
+
+.nav-item:hover {
+    color: #ffa5b0;
+    font-weight: 800;
+    background-color: #ffcac2;
+    padding: 0 15px;
+}
+
+
+.title{
+    font-size: 5rem;
+    font-weight: bolder;
+    margin-top: 100px;
+}
+
+.contact{
+    font-size: 4rem;
+}
+
+.cf1{
+    position: relative;
+    top: 100px;
+    background-color: #ffa5b0;
+}
+
+.men{
+    padding: 20px;
+}
+.women{
+    padding: 20px;
+}
+
+.him{
+    text-decoration: none;
+    font-size: 4rem;
+}
+
+.her{
+    text-decoration: none;
+    font-size: 4rem;
+}
+
+.him:hover{
+    color: #f54291;
+    text-decoration: none;
+}
+.her:hover{
+    color: #f54291;
+    text-decoration: none;
+}

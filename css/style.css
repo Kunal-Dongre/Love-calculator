@@ -1,0 +1,211 @@
+body {
+    font-family: 'Tangerine', cursive;
+    background-color: #ffcac2;
+    scroll-behavior: smooth;
+
+    text-align: center;
+}
+
+.navbar {
+    font-size: 2rem;
+    /* background-color: #ffa5b0; */
+    background: linear-gradient(70deg, #ffa5b0, #f54291);
+    padding: 0 16px;
+    font-weight: 800;
+
+}
+
+.navbar-brand {
+    font-size: 3rem;
+    height: 80px;
+
+}
+
+.nav-item:hover {
+    color: #ffa5b0;
+    font-weight: 800;
+    background-color: #ffcac2;
+    padding: 0 15px;
+}
+
+/* Divs */
+.cf1 {
+    position: relative;
+    top: -50px;
+}
+
+.heart {
+    font-size: 200px;
+    color: #e00;
+    animation: beat .25s infinite alternate;
+    transform-origin: center;
+}
+
+/* Heart beat animation */
+@keyframes beat {
+    to {
+        transform: scale(1.4);
+    }
+}
+
+.firstname h2 {
+    position: relative;
+    font-size: 3rem;
+}
+
+.firstname input {
+    position: relative;
+}
+
+.secondname h2 {
+    position: relative;
+    font-size: 3rem;
+}
+
+.secondname input {
+    position: relative;
+}
+
+.answer h2 {
+    font-size: 3rem;
+}
+
+.button1 {
+    font-size: 1.7rem;
+    font-weight: bolder;
+    background-color: #e7305b;
+}
+
+.button1:hover{
+    background-color: #c70039;
+}
+
+.jointheart{
+    width: 20%;
+    height: auto;
+    position: relative;
+    top: -200px;
+    right: 25%;
+    opacity: 0.4;
+    transform: rotate(-20deg);
+}
+.jointheart1{
+    width: 20%;
+    height: auto;
+    position: relative;
+    top: -550px;
+    left: 25%;
+    opacity: 0.4;
+    transform: rotate(5deg);
+}
+
+.cf2{
+    position: relative;
+    top: -100px;
+    background-color: #fff;
+    padding: 30px 0 30px 0;
+}
+
+.cf2 h2{
+    font-size: 4rem;
+    position: relative;
+}
+
+.cf2 p{
+    width: 80%;
+    font-size: 2.3rem;
+    position: relative;
+    left: 10%;
+    word-spacing: 0.3rem;
+}
+.cf3{
+    position: relative;
+    top: -80px;
+    /* background-color: #fff; */
+    padding: 30px 0 30px 0;
+
+}
+
+.cf3 h2{
+    font-size: 4rem;
+    position: relative;
+}
+
+.cf3 p{
+    width: 80%;
+    font-size: 2.3rem;
+    position: relative;
+    left: 10%;
+    word-spacing: 0.3rem;
+}
+@keyframes beat {
+    to {
+        transform: scale(1.4);
+    }
+}
+
+@media screen and (max-width:768px) {
+
+
+    .firstname h2 {
+        position: relative;
+        font-size: 3rem;
+        /* top: 130px; */
+
+    }
+
+    .firstname input {
+        position: relative;
+        /* top: 130px; */
+
+    }
+
+    .secondname h2 {
+        position: relative;
+        font-size: 3rem;
+        /* top: 150px; */
+
+    }
+
+    .secondname input {
+        position: relative;
+        /* top: 150px; */
+
+    }
+
+    .button1 {
+        position: relative;
+        background-color: #e7305b;
+
+        top: 20px;
+    }
+
+    .answer h2 {
+        font-size: 1.8rem;
+    }
+
+    .cf2 h2{
+        font-size: 2.8rem;
+        position: relative;
+    }
+    
+    .cf2 p{
+        width: 80%;
+        font-size: 1.8rem;
+        position: relative;
+        left: 10%;
+        word-spacing: 0.3rem;
+    }
+    .cf3 h2{
+        font-size: 2.8rem;
+        position: relative;
+    }
+    
+    .cf3 p{
+        width: 80%;
+        font-size: 1.8rem;
+        position: relative;
+        left: 10%;
+        word-spacing: 0.3rem;
+    }
+}
